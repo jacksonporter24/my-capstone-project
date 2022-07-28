@@ -45,11 +45,20 @@ CHAPTER 10: Halloween
 
 Just before the central chapter, Harry meets his worst male adult enemy at Hogwarts. Just after the break, he makes his best girl-student friend. Of course, those not enamored with Alan Rickman would say the echo here – with no reverse, is Snape and the Mountain Troll as reflected images.`]
 
+
+const exampleChapters = ["", "", "", "", "", "", "", "", "", "", "", ""]
+
 //Export functions to use in the main server file. 
+
 module.exports = {
 
     getChapterOne: (req, res) => {
         let firstAndLastChapter = harryPotterChapters[0]
+        res.status(200).send(firstAndLastChapter)
+    },
+
+    getUserChapterOne: (req, res) => {
+        let firstAndLastChapter = exampleChapters[0]
         res.status(200).send(firstAndLastChapter)
     },
 
@@ -58,8 +67,18 @@ module.exports = {
         res.status(200).send(chapterSeven)
     },
 
+    getUserChapterSeven: (req, res) => {
+        let chapterSeven = exampleChapters[0]
+        res.status(200).send(chapterSeven)
+    },
+
     getChapterTwo: (req, res) => {
         let chapterTwo = harryPotterChapters[1]
+        res.status(200).send(chapterTwo)
+    },
+
+    getUserChapterTwo: (req, res) => {
+        let chapterTwo = exampleChapters[1]
         res.status(200).send(chapterTwo)
     },
 
@@ -68,8 +87,18 @@ module.exports = {
         res.status(200).send(chapterTwelve)
     },
 
+    getUserChapterTwelve: (req, res) => {
+        let chapterTwelve = exampleChapters[1]
+        res.status(200).send(chapterTwelve)
+    },
+
     getChapterThree: (req, res) => {
         let chapterThree = harryPotterChapters[2]
+        res.status(200).send(chapterThree)
+    },
+
+    getUserChapterThree: (req, res) => {
+        let chapterThree = exampleChapters[2]
         res.status(200).send(chapterThree)
     },
 
@@ -78,8 +107,18 @@ module.exports = {
         res.status(200).send(chapterEleven)
     },
 
+    getUserChapterEleven: (req, res) => {
+        let chapterEleven = exampleChapters[2]
+        res.status(200).send(chapterEleven)
+    },
+
     getChapterFour: (req, res) => {
         let chapterFour = harryPotterChapters[3]
+        res.status(200).send(chapterFour)
+    },
+
+    getUserChapterFour: (req, res) => {
+        let chapterFour = exampleChapters[3]
         res.status(200).send(chapterFour)
     },
 
@@ -88,8 +127,18 @@ module.exports = {
         res.status(200).send(chapterTen)
     },
 
+    getUserChapterTen: (req, res) => {
+        let chapterTen = exampleChapters[3]
+        res.status(200).send(chapterTen)
+    },
+
     getChapterFive: (req, res) => {
         let chapterFive = harryPotterChapters[4]
+        res.status(200).send(chapterFive)
+    },
+
+    getUserChapterFive: (req, res) => {
+        let chapterSeven = exampleChapters[4]
         res.status(200).send(chapterFive)
     },
 
@@ -98,13 +147,34 @@ module.exports = {
         res.status(200).send(chapterNine)
     },
 
+    getUserChapterNine: (req, res) => {
+        let chapterNine = exampleChapters[4]
+        res.status(200).send(chapterNine)
+    },
+
     getChapterSix: (req, res) => {
         let chapterSix = harryPotterChapters[5]
+        res.status(200).send(chapterSix)
+    },
+
+    getUserChapterSix: (req, res) => {
+        let chapterSix = exampleChapters[5]
         res.status(200).send(chapterSix)
     },
 
     getChapterEight: (req, res) => {
         let chapterEight = harryPotterChapters[5]
         res.status(200).send(chapterEight)
+    },
+
+    getUserChapterEight: (req, res) => {
+        let chapterEight = exampleChapters[5]
+        res.status(200).send(chapterEight)
+    },
+
+    postUserChapterOne: (req, res) => {
+        let userChapterOne = req.body.description
+        exampleChapters[0] = userChapterOne
+        res.status(200).send(userChapterOne)
     }
 }

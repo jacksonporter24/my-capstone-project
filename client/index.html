@@ -10,11 +10,41 @@
 </head>
 <body>
     <p id='header-text'>RING CYCLE STORYTELLING</p>
-    <p id='repeat-text'></p>
-    <p id="hello-text">hello world</p>
     
-    <button id='example-button'>GET EXAMPLE</button>
-    <button id='create-button'>CREATE YOUR OWN</button>
+    <form id="harryExample">
+        <img src="http://lofrev.net/wp-content/photos/2014/09/Harry-potter-logo.jpg">
+    </form>
+    
+
+    <input type="checkbox" id="switch"
+                class="checkbox"/>
+    <label for="switch" class="toggle">
+    </label>
+
+    <p>Create   /    Example</p>
+
+</label>  
+
+
+    <form id="form">
+        <label for="parts">Pick a Part to Update:</label><br>
+        <select name="parts" id="parts">
+            <option value="first">First and Final Part</option>
+            <option value="second">Second Part</option>
+            <option value="third">Third Part</option>
+            <option value="fourth">Fourth Part</option>
+            <option value="fifth">Fifth Part</option>
+            <option value="sixth">Sixth Part</option>
+            <!-- <option value="seventh">Seventh Part</option>
+            <option value="eighth">Eighth Part</option>
+            <option value="ninth">Ninth Part</option>
+            <option value="tenth">Tenth Part</option>
+            <option value="eleventh">Eleventh Part</option>
+            <option value="twelfth">Twelfth Part</option> -->
+        </select><br><br>
+        <input type="text" id="userInput" placeholder="Type Here..."><br>
+        <input type="submit" id="submit">
+    </form>
    
     <div class="container"></div>
     <div class="line-one"></div>
@@ -24,7 +54,7 @@
     <div class="line-five"></div>
     <div class="line-six"></div>
     <div class="verticle-line"></div>
-    <div class="circle" style="height: 460px"></div>
+    <div class="circle"></div>
 
     <button id="chap-one">
         First and Final Part</button>
@@ -61,11 +91,6 @@
 
     <button id="chap-twelve">
         Twelfth Part</button>
-
-    <!-- <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label> -->
        
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
