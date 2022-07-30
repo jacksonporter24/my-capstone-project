@@ -1,3 +1,4 @@
+//this is my button retrievals
 const chapOneBtn = document.getElementById("chap-one")
 const chapSevenBtn = document.getElementById("chap-seven")
 const chapTwoBtn = document.getElementById("chap-two")
@@ -10,20 +11,35 @@ const chapFiveBtn = document.getElementById("chap-five")
 const chapNineBtn = document.getElementById("chap-nine")
 const chapSixBtn = document.getElementById("chap-six")
 const chapEightBtn = document.getElementById("chap-eight")
-
+const userTextBox = document.getElementById("userInput")
+const pickAPart = document.getElementById("parts")
+const submitBtn = document.getElementById("submit")
 const harryPotterNameLogo = document.getElementById('harryExample') 
-harryPotterNameLogo.style.display='none';
+const modal12 = document.getElementById("myModal12")
+const closeButton = document.getElementsByClassName("close")[0]
+const paragraphBtn = document.getElementById("paragraph")
 
+//this is the setup
+harryPotterNameLogo.style.display='none';
 var onCreatePage = true;
 
+//this is the stuff that is used by more than one button
+const closeButtonClicked = () => {
+    modal12.style.display="none"
+}
+
+//this is the display buttons and parts on the screen
 const toggleSwitch = document.getElementById("switch");
 toggleSwitch.addEventListener('click', () => {
     const form = document.getElementById('form')
 
     if(onCreatePage === true) {
         onCreatePage = false
+        document.body.style.backgroundColor="white"
+        document.body.style.cursor="url(https://cdn.custom-cursor.com/packs/420/pack381.png), auto"
     } else {
         onCreatePage = true
+        document.body.style.backgroundColor="white"
     }
 
     if(form.style.display === 'none') {
@@ -53,16 +69,16 @@ const getChapterOne = () => {
         axios.get(baseURL + "/user/chapters/1")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/1")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
-    
+    modal12.style.display = "block";
 }
 
 const getChapterSeven = () => {
@@ -102,16 +118,20 @@ const getChapterTwelve = () => {
         axios.get(baseURL + "/user/chapters/12")
         .then(res => {
             const data = res.data
-            alert(data)
+            console.log(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/12")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    modal12.style.display = "block";
 }
+
+
 
 const getChapterThree = () => {
     if(onCreatePage) {
@@ -241,9 +261,7 @@ const getChapterEight = () => {
     }
 }
 
-const userTextBox = document.getElementById("userInput")
-const pickAPart = document.getElementById("parts")
-const submitBtn = document.getElementById("submit")
+
 
 const saveUserInput = () => {
     let textBoxInput= userTextBox.value
@@ -256,6 +274,7 @@ const saveUserInput = () => {
     }
 }
 
+//this is the onclick listeners
 chapOneBtn.addEventListener('click', getChapterOne)
 chapSevenBtn.addEventListener('click', getChapterSeven)
 chapTwoBtn.addEventListener('click', getChapterTwo)
@@ -270,3 +289,4 @@ chapSixBtn.addEventListener('click', getChapterSix)
 chapEightBtn.addEventListener('click', getChapterEight)
 
 submitBtn.addEventListener('click', saveUserInput)
+closeButton.addEventListener('click', closeButtonClicked)
