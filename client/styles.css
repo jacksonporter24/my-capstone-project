@@ -33,7 +33,7 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 50vw;
-    left: 41.5vw;
+    left: 39.5vw;
     color: orangered;
     font-family: verdana, sans-serif;
 }
@@ -177,6 +177,19 @@ img {
     padding: 2vh 1.5vw;
     top: 41.5vw;
     left: 60vw;
+    color: orangered;
+    font-family: verdana, sans-serif;
+}
+
+#chap-final {
+    /* This is final chapter for HP example */
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 2vh 1.5vw;
+    top: 50vw;
+    left: 48vw;
     color: orangered;
     font-family: verdana, sans-serif;
 }
@@ -365,3 +378,5 @@ img {
     text-decoration: none;
     cursor: pointer;
   }
+
+  

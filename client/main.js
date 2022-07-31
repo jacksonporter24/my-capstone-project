@@ -1,5 +1,6 @@
 //this is my button retrievals
 const chapOneBtn = document.getElementById("chap-one")
+const chapFinalBtn = document.getElementById("chap-final")
 const chapSevenBtn = document.getElementById("chap-seven")
 const chapTwoBtn = document.getElementById("chap-two")
 const chapTwelveBtn = document.getElementById("chap-twelve")
@@ -15,7 +16,7 @@ const userTextBox = document.getElementById("userInput")
 const pickAPart = document.getElementById("parts")
 const submitBtn = document.getElementById("submit")
 const harryPotterNameLogo = document.getElementById('harryExample') 
-const modal12 = document.getElementById("myModal12")
+const myModal12 = document.getElementById("myModal12")
 const closeButton = document.getElementsByClassName("close")[0]
 const paragraphBtn = document.getElementById("paragraph")
 
@@ -25,7 +26,7 @@ var onCreatePage = true;
 
 //this is the stuff that is used by more than one button
 const closeButtonClicked = () => {
-    modal12.style.display="none"
+    myModal12.style.display="none"
 }
 
 //this is the display buttons and parts on the screen
@@ -78,7 +79,25 @@ const getChapterOne = () => {
             paragraphBtn.innerText = data
         })
     }
-    modal12.style.display = "block";
+    myModal12.style.display = "block";
+}
+
+const getChapterFinal = () => {
+    if(onCreatePage) {
+        //this means they are on the create page and we need to get their user data
+        axios.get(baseURL + "/user/chapters/final")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/final")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    }
+    myModal12.style.display = "block";
 }
 
 const getChapterSeven = () => {
@@ -86,15 +105,16 @@ const getChapterSeven = () => {
         axios.get(baseURL + "/user/chapters/7")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/7")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterTwo = () => {
@@ -102,15 +122,16 @@ const getChapterTwo = () => {
         axios.get(baseURL + "/user/chapters/2")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/2")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterTwelve = () => {
@@ -118,7 +139,6 @@ const getChapterTwelve = () => {
         axios.get(baseURL + "/user/chapters/12")
         .then(res => {
             const data = res.data
-            console.log(data)
             paragraphBtn.innerText = data
         })
     } else {
@@ -128,7 +148,7 @@ const getChapterTwelve = () => {
             paragraphBtn.innerText = data
         })
     }
-    modal12.style.display = "block";
+    myModal12.style.display = "block";
 }
 
 
@@ -138,15 +158,16 @@ const getChapterThree = () => {
         axios.get(baseURL + "/user/chapters/3")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/3")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterEleven = () => {
@@ -154,15 +175,16 @@ const getChapterEleven = () => {
         axios.get(baseURL + "/user/chapters/11")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/11")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterFour = () => {
@@ -170,15 +192,16 @@ const getChapterFour = () => {
         axios.get(baseURL + "/user/chapters/4")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/4")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
     const getChapterTen = () => {
@@ -186,31 +209,33 @@ const getChapterFour = () => {
             axios.get(baseURL + "/user/chapters/10")
             .then(res => {
                 const data = res.data
-                alert(data)
+                paragraphBtn.innerText = data
             })
         } else {
             axios.get(baseURL + "/hp/chapters/10")
             .then(res => {
                 const data = res.data
-                alert(data)
+                paragraphBtn.innerText = data
             })
         }
-}
+        myModal12.style.display = "block";
+    }
 
 const getChapterFive = () => {
     if(onCreatePage) {
         axios.get(baseURL + "/user/chapters/5")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/5")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterNine = () => {
@@ -218,15 +243,16 @@ const getChapterNine = () => {
         axios.get(baseURL + "/user/chapters/9")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/9")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterSix = () => {
@@ -234,15 +260,16 @@ const getChapterSix = () => {
         axios.get(baseURL + "/user/chapters/6")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/6")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
 
 const getChapterEight = () => {
@@ -250,17 +277,17 @@ const getChapterEight = () => {
         axios.get(baseURL + "/user/chapters/8")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     } else {
         axios.get(baseURL + "/hp/chapters/8")
         .then(res => {
             const data = res.data
-            alert(data)
+            paragraphBtn.innerText = data
         })
     }
+    myModal12.style.display = "block";
 }
-
 
 
 const saveUserInput = () => {
@@ -269,13 +296,85 @@ const saveUserInput = () => {
         axios.post(baseURL + "/user/chapters/1", {"description": textBoxInput})
         .then(res => {
             const data = res.data
-            alert(data)
+        })
+    }
+    else if (pickAPart.value === "final") {
+        axios.post(baseURL + "/user/chapters/final", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    } 
+    else if (pickAPart.value === "seventh") {
+        axios.post(baseURL + "/user/chapters/7", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "second") {
+        axios.post(baseURL + "/user/chapters/2", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "twelfth") {
+        axios.post(baseURL + "/user/chapters/12", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "third") {
+        axios.post(baseURL + "/user/chapters/3", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "eleventh") {
+        axios.post(baseURL + "/user/chapters/11", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "fourth") {
+        axios.post(baseURL + "/user/chapters/4", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "tenth") {
+        axios.post(baseURL + "/user/chapters/10", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "fifth") {
+        axios.post(baseURL + "/user/chapters/5", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "ninth") {
+        axios.post(baseURL + "/user/chapters/9", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "sixth") {
+        axios.post(baseURL + "/user/chapters/6", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
+        })
+    }
+    else if (pickAPart.value === "eighth") {
+        axios.post(baseURL + "/user/chapters/8", {"description": textBoxInput})
+        .then(res => {
+            const data = res.data
         })
     }
 }
 
 //this is the onclick listeners
 chapOneBtn.addEventListener('click', getChapterOne)
+chapFinalBtn.addEventListener('click', getChapterFinal)
 chapSevenBtn.addEventListener('click', getChapterSeven)
 chapTwoBtn.addEventListener('click', getChapterTwo)
 chapTwelveBtn.addEventListener('click', getChapterTwelve)
