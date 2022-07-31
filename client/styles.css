@@ -19,6 +19,7 @@ img {
     top: 7vh;
     width: 30vw;
     height: auto;
+    background-color: tan;
 }
 
 #userInput {
@@ -328,6 +329,7 @@ img {
     height: 50vh;
 }
 
+/* LEFT MODAL */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -353,6 +355,7 @@ img {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-left: 0%;
   }
   
   /* Modal Content/Box */
@@ -361,7 +364,7 @@ img {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
@@ -379,4 +382,63 @@ img {
     cursor: pointer;
   }
 
+/* RIGHT MODAL */
+  .modalRight {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 300%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Modal (background) */
+.modalRight {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-left: 0;
+  }
   
+  /* Modal Content/Box */
+  .modal-content-right {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .closeRight {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeRight:hover,
+  .closeRight:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /*   <div id="myModalRight" class="modalRight">
+        <div class="modal-content-right">
+            <span class="closeRight">&times;</span>
+            <!-- <span class="paragraph">This is a test.</span> -->
+            <p id = "paragraphRight">
+                You need to input text. */
