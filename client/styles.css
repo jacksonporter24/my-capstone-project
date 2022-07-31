@@ -333,29 +333,29 @@ img {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 9999; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity  */
 }
 
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
+    z-index: 9999; /* Sit on top */
+    left: -20%;
+    top: -15%;
+    width: 150%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    margin-left: 0%;
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    margin-left: -25%;
   }
   
   /* Modal Content/Box */
@@ -373,6 +373,7 @@ img {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    z-index: 9999;
   }
   
   .close:hover,
@@ -380,35 +381,36 @@ img {
     color: black;
     text-decoration: none;
     cursor: pointer;
+    z-index: 9999;
   }
 
 /* RIGHT MODAL */
   .modalRight {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 9999; /* Sit on top */
     left: 0;
     top: 0;
-    width: 300%; /* Full width */
+    width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
 }
 
 /* The Modal (background) */
 .modalRight {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
+    z-index: 9999; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    margin-left: 0;
+    overflow-y: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    margin-left: 25%;
   }
   
   /* Modal Content/Box */
@@ -426,6 +428,7 @@ img {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    z-index: 9999;
   }
   
   .closeRight:hover,
@@ -433,6 +436,7 @@ img {
     color: black;
     text-decoration: none;
     cursor: pointer;
+    z-index: 9999;
   }
 
 

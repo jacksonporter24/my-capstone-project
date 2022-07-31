@@ -116,7 +116,23 @@ const getChapterFinal = () => {
             paragraphRightBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        //this means they are on the create page and we need to get their user data
+        axios.get(baseURL + "/user/chapters/1")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/1")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    }
     myModalRight.style.display = "block";
+    myModalLeft.style.display = "block";
 }
 
 const getChapterSeven = () => {
@@ -150,7 +166,22 @@ const getChapterTwo = () => {
             paragraphBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/12")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/12")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    }
     myModalLeft.style.display = "block";
+    myModalRight.style.display = "block";
 }
 
 const getChapterTwelve = () => {
@@ -167,7 +198,22 @@ const getChapterTwelve = () => {
             paragraphRightBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/2")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/2")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    }
     myModalRight.style.display = "block";
+    myModalLeft.style.display = "block";
 }
 
 
@@ -186,7 +232,22 @@ const getChapterThree = () => {
             paragraphBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/11")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/11")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    }
     myModalLeft.style.display = "block";
+    myModalRight.style.display = "block";
 }
 
 const getChapterEleven = () => {
@@ -203,7 +264,22 @@ const getChapterEleven = () => {
             paragraphRightBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/3")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/3")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    }
     myModalRight.style.display = "block";
+    myModalLeft.style.display = "block";
 }
 
 const getChapterFour = () => {
@@ -220,7 +296,23 @@ const getChapterFour = () => {
             paragraphBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/10")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/10")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    }
+
     myModalLeft.style.display = "block";
+    myModalRight.style.display = "block";
 }
 
     const getChapterTen = () => {
@@ -237,7 +329,22 @@ const getChapterFour = () => {
                 paragraphRightBtn.innerText = data
             })
         }
+
+        if(onCreatePage) {
+            axios.get(baseURL + "/user/chapters/4")
+            .then(res => {
+                const data = res.data
+                paragraphBtn.innerText = data
+            })
+        } else {
+            axios.get(baseURL + "/hp/chapters/4")
+            .then(res => {
+                const data = res.data
+                paragraphBtn.innerText = data
+            })
+        }
         myModalRight.style.display = "block";
+        myModalLeft.style.display = "block";
     }
 
 const getChapterFive = () => {
@@ -254,7 +361,22 @@ const getChapterFive = () => {
             paragraphBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/9")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/9")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    }
     myModalLeft.style.display = "block";
+    myModalRight.style.display = "block";
 }
 
 const getChapterNine = () => {
@@ -271,7 +393,22 @@ const getChapterNine = () => {
             paragraphRightBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/5")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/5")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    }
     myModalRight.style.display = "block";
+    myModalLeft.style.display = "block";
 }
 
 const getChapterSix = () => {
@@ -288,7 +425,21 @@ const getChapterSix = () => {
             paragraphBtn.innerText = data
         })
     }
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/8")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/8")
+        .then(res => {
+            const data = res.data
+            paragraphRightBtn.innerText = data
+        })
+    }
     myModalLeft.style.display = "block";
+    myModalRight.style.display = "block";
 }
 
 const getChapterEight = () => {
@@ -305,7 +456,22 @@ const getChapterEight = () => {
             paragraphRightBtn.innerText = data
         })
     }
+
+    if(onCreatePage) {
+        axios.get(baseURL + "/user/chapters/6")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    } else {
+        axios.get(baseURL + "/hp/chapters/6")
+        .then(res => {
+            const data = res.data
+            paragraphBtn.innerText = data
+        })
+    }
     myModalRight.style.display = "block";
+    myModalLeft.style.display = "block";
 }
 
 
