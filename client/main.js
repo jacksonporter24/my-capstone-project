@@ -23,6 +23,13 @@ const closeButtonRight = document.getElementsByClassName("closeRight")[0]
 const paragraphBtn = document.getElementById("paragraph")
 const paragraphRightBtn = document.getElementById("paragraphRight")
 const circle = document.getElementById("circle")
+const lineOne = document.getElementById("line-one")
+const lineTwo = document.getElementById("line-two")
+const lineThree = document.getElementById("line-three")
+const lineFour = document.getElementById("line-four")
+const lineFive = document.getElementById("line-five")
+const lineSix = document.getElementById("line-six")
+const verticleLine = document.getElementById("verticle-line")
 
 //this is the setup
 harryPotterNameLogo.style.display='none';
@@ -41,13 +48,26 @@ toggleSwitch.addEventListener('click', () => {
 
     if(onCreatePage === true) {
         onCreatePage = false
-        document.body.style.backgroundColor="tan"
-        document.body.style.cursor="url(https://cdn.custom-cursor.com/packs/420/pack381.png), auto"
-        circle.style.background="gray"
+        document.body.style.backgroundColor="#D3A625"
+        circle.style.background="#740001"
+        lineOne.style.background="white"
+        lineTwo.style.background="white"
+        lineThree.style.background="white"
+        lineFour.style.background="white"
+        lineFive.style.background="white"
+        lineSix.style.background="white"
+        verticleLine.style.background="white"
     } else {
         onCreatePage = true
-        document.body.style.backgroundColor="white"
-        circle.style.background="orangered"
+        document.body.style.backgroundColor="#89CFF0"
+        circle.style.background="lightgray"
+        lineOne.style.background="black"
+        lineTwo.style.background="black"
+        lineThree.style.background="black"
+        lineFour.style.background="black"
+        lineFive.style.background="black"
+        lineSix.style.background="black"
+        verticleLine.style.background="black"
     }
 
     if(form.style.display === 'none') {
