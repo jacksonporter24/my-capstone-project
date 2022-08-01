@@ -22,6 +22,7 @@ const closeButton = document.getElementsByClassName("close")[0]
 const closeButtonRight = document.getElementsByClassName("closeRight")[0]
 const paragraphBtn = document.getElementById("paragraph")
 const paragraphRightBtn = document.getElementById("paragraphRight")
+const circle = document.getElementById("circle")
 
 //this is the setup
 harryPotterNameLogo.style.display='none';
@@ -42,9 +43,11 @@ toggleSwitch.addEventListener('click', () => {
         onCreatePage = false
         document.body.style.backgroundColor="tan"
         document.body.style.cursor="url(https://cdn.custom-cursor.com/packs/420/pack381.png), auto"
+        circle.style.background="gray"
     } else {
         onCreatePage = true
         document.body.style.backgroundColor="white"
+        circle.style.background="orangered"
     }
 
     if(form.style.display === 'none') {

@@ -1,29 +1,44 @@
 body {
     overflow: scroll;
-    background-color: white;
+    background-color: lightgray;
+    margin-top: 2em;
 }
 
 #header-text {
     font-size: xx-large;
     text-align: center;
    width: 320px;
-   padding: 10px;
-   border: 5px solid gray;
-   margin: auto
-   
-    /* display: none; */
+   padding: 20px;
+   border: 5px solid black;
+   margin: auto;
+   background: orangered;
+   color: white;
+}
+
+#side-content {
+    font-size: x-large;
+    text-align: center;
+   width: 200px;
+   padding: 20px;
+   border: 5px solid black;
+   /* margin: auto; */
+   background: orangered;
+   color: white;
 }
 
 img {
-    padding: 5px;
-    top: 7vh;
+    padding: 1px;
+    top: 1%;
     width: 30vw;
+    left: 2vw;
     height: auto;
-    background-color: tan;
+    mix-blend-mode: multiply;
+    position: absolute;
 }
 
 #userInput {
-    padding: 10px 10px
+    padding: 10px 10px;
+    text-align: left;   
 }
 
 #chap-one {
@@ -34,9 +49,10 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 50vw;
-    left: 39.5vw;
+    left: 39vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-two {
@@ -47,9 +63,10 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 41.5vw;
-    left: 26.3vw;
+    left: 26vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-three {
@@ -60,9 +77,10 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 36.5vw;
-    left: 25vw;
+    left: 24.7vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-four {
@@ -73,9 +91,10 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 31.5vw;
-    left: 22.5vw;
+    left: 22vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-five {
@@ -86,9 +105,10 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 26.5vw;
-    left: 25.5vw;
+    left: 25.1vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-six {
@@ -99,9 +119,10 @@ img {
     margin: 0 auto;
     padding: 2vh 1.5vw;
     top: 21.5vw;
-    left: 27.8vw;
+    left: 27.3vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-seven {
@@ -115,6 +136,7 @@ img {
      left: 42.5vw;
      color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-eight {
@@ -128,6 +150,7 @@ img {
     left: 60vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-nine {
@@ -141,6 +164,7 @@ img {
     left: 62.5vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-ten {
@@ -154,6 +178,7 @@ img {
     left: 65vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-eleven {
@@ -167,6 +192,7 @@ img {
     left: 62.5vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-twelve {
@@ -180,6 +206,7 @@ img {
     left: 60vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 #chap-final {
@@ -193,6 +220,7 @@ img {
     left: 48vw;
     color: orangered;
     font-family: verdana, sans-serif;
+    font-weight: bold;
 }
 
 
@@ -207,7 +235,7 @@ img {
         display : inline-block;
         width : 100px;
         height : 52px;
-        background-color: red;
+        background-color: black;
         border-radius: 30px;
         border: 2px solid gray;
     }
@@ -259,6 +287,7 @@ img {
     height: 0.4vh;
     background: black;
     width: 23vw;
+    border-radius: 50%;
 }
 
 .line-two {
@@ -270,6 +299,7 @@ img {
     left: 34vw;
     margin: 0 auto;
     background: black;
+    border-radius: 50%;
 }
 
 .line-three {
@@ -281,6 +311,7 @@ img {
     left: 32vw;
     margin: 0 auto;
     background: black;
+    border-radius: 50%;
 }
 
 .line-four {
@@ -292,6 +323,7 @@ img {
     left: 34vw;
     margin: 0 auto;
     background: black;
+    border-radius: 50%;
 }
 
 .line-five {
@@ -303,6 +335,7 @@ img {
     left: 36.5vw;
     margin:auto;
     background: black;
+    border-radius: 50%;
 }
 
 .verticle-line {
@@ -319,7 +352,7 @@ img {
 
 
 .circle {
-    background: lightblue;
+    background: orangered;
     border-radius: 50%;
     position: absolute;
     z-index: -1;
@@ -370,8 +403,8 @@ img {
   /* The Close Button */
   .close {
     color: #aaa;
-    float: right;
-    font-size: 28px;
+    float: left;
+    font-size: 20px;
     font-weight: bold;
     z-index: 9999;
   }
@@ -426,7 +459,7 @@ img {
   .closeRight {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     z-index: 9999;
   }
@@ -438,11 +471,3 @@ img {
     cursor: pointer;
     z-index: 9999;
   }
-
-
-  /*   <div id="myModalRight" class="modalRight">
-        <div class="modal-content-right">
-            <span class="closeRight">&times;</span>
-            <!-- <span class="paragraph">This is a test.</span> -->
-            <p id = "paragraphRight">
-                You need to input text. */
