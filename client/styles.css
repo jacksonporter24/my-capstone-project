@@ -5,6 +5,7 @@ body {
 }
 
 #header-text {
+    font-family: verdana, sans-serif;
     font-size: xx-large;
     text-align: center;
    width: 320px;
@@ -16,7 +17,8 @@ body {
 }
 
 #side-content {
-    font-size: x-large;
+    font-family: verdana, sans-serif;
+    font-size: large;
     text-align: center;
    width: 200px;
    padding: 20px;
@@ -25,7 +27,28 @@ body {
    color: black;
 }
 
+#parts {
+    padding: 10px 10px;
+    text-align: left;
+    font-family: verdana, sans-serif;
+}
+
+#submit {
+    font-family: verdana, sans-serif;
+}
+
+#deleteButton {
+    font-family: verdana, sans-serif;
+}
+
+#userInput {
+    font-family: verdana, sans-serif;
+}
+
 img {
+    --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
     padding: 1px;
     top: 1%;
     width: 30vw;
@@ -33,11 +56,14 @@ img {
     height: auto;
     mix-blend-mode: multiply;
     position: absolute;
+    box-sizing: border-box;
 }
 
 #userInput {
+    position: relative;
     padding: 10px 10px;
     text-align: left;   
+    z-index: 9998;
 }
 
 #chap-one {
@@ -222,9 +248,7 @@ img {
     font-weight: bold;
 }
 
-
-
-    h1 {
+h1 {
         color: green;
     }
            
@@ -254,8 +278,9 @@ img {
            
     /* Toggle text */
     p {
-        font-family: verdana sans-serif;
+        font-family: verdana, sans-serif;
         font-weight: bold;
+        font-size: large;
     }
            
     /* Checkbox checked effect */
@@ -453,6 +478,7 @@ img {
     padding: 20px;
     border: 1px solid #888;
     width: 30%; /* Could be more or less, depending on screen size */
+    
   }
   
   /* The Close Button */

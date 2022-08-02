@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 // Import our controller functions.
-const { getChapterOne, getChapterSeven, getChapterFinal, getChapterTwo, getChapterTwelve, getChapterThree, getChapterEleven, getChapterFour, getChapterTen, getChapterFive, getChapterNine, getChapterSix, getChapterEight, getUserChapterOne, getUserChapterSeven, getUserChapterFinal, getUserChapterTwo, getUserChapterTwelve, getUserChapterThree, getUserChapterEleven, getUserChapterFour, getUserChapterTen, getUserChapterFive, getUserChapterNine, getUserChapterSix, getUserChapterEight, postUserChapterOne, postUserChapterSeven, postUserFinalChapter, postUserChapterTwo, postUserChapterTwelve, postUserChapterThree, postUserChapterEleven, postUserChapterFour, postUserChapterTen, postUserChapterFive, postUserChapterNine, postUserChapterSix, postUserChapterEight } = require('./controller.js')
+const { getChapterOne, getChapterSeven, getChapterFinal, getChapterTwo, getChapterTwelve, getChapterThree, getChapterEleven, getChapterFour, getChapterTen, getChapterFive, getChapterNine, getChapterSix, getChapterEight, getUserChapterOne, getUserChapterSeven, getUserChapterFinal, getUserChapterTwo, getUserChapterTwelve, getUserChapterThree, getUserChapterEleven, getUserChapterFour, getUserChapterTen, getUserChapterFive, getUserChapterNine, getUserChapterSix, getUserChapterEight, postUserChapterOne, postUserChapterSeven, postUserFinalChapter, postUserChapterTwo, postUserChapterTwelve, postUserChapterThree, postUserChapterEleven, postUserChapterFour, postUserChapterTen, postUserChapterFive, postUserChapterNine, postUserChapterSix, postUserChapterEight, deleteUserChapters } = require('./controller.js')
 
 //app.get HARRY CHAPTERS
 app.get("/api/hp/chapters/1", getChapterOne)
@@ -68,6 +68,9 @@ app.post("/api/user/chapters/9", postUserChapterNine)
 
 app.post("/api/user/chapters/6", postUserChapterSix)
 app.post("/api/user/chapters/8", postUserChapterEight)
+
+//DELETE USER CHAPTERS
+app.delete("/api/delete", deleteUserChapters)
 
 const SERVER_PORT = 3000
 app.listen(SERVER_PORT, () => console.log(`server is running on ${SERVER_PORT}`))

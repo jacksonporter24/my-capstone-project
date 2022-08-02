@@ -71,7 +71,7 @@ Harry learns that Hagrid accidentally told Voldemort a way to get past the dog, 
 The first person Harry sees is Quirrell. Harry is confused, thinking he’d find Snape. Quirrell explains that he cursed Harry’s broom, and that Snape was trying to stop him this whole time. Quirrell finds the mirror Harry saw his parents in, and claims it is the key to the stone. Quirrell ties Harry up, and is attempting to get the stone. Harry keeps him distracted. Quirrell says that he is a follower of Voldemort. Voldemort then told Quirrell to use Harry to find the stone. Harry lies about what he saw. The stone appears magically into his pocket. Voldemort sees through the lie, and Quirrell takes off his turban to show Voldemort’s face on the back of Quirrell’s head. He attempts to get the stone, but Harry refuses. Harry uses the stone’s power to hurt Quirrell, and then passes out. When he wakes up he finds that he is safe and Dumbledore destroyed the stone. At the final feast, Harry and his friends are awarded many points, allowing Gryffindor to win the house cup. Then Harry, Hermione, and Ron board a train to go back home for summer break.`]
 
 
-const exampleChapters = ["", "", "", "", "", "", "", "", "", "", "", ""]
+let exampleChapters = ["", "", "", "", "", "", "", "", "", "", "", ""]
 
 //Export functions to use in the main server file. 
 
@@ -285,5 +285,11 @@ module.exports = {
         let userChapterEight = req.body.description
         exampleChapters[7] = userChapterEight
         res.status(200).send(userChapterEight)
+    },
+
+    deleteUserChapters: (req, res) => {
+        let itemsToDelete = exampleChapters.length
+        exampleChapters = []
+        res.status(200).send(itemsToDelete + "")
     }
 }

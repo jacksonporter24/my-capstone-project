@@ -580,7 +580,25 @@ const saveUserInput = () => {
     }
 }
 
+const deleteButton = document.getElementById("deleteButton")
+
+const deleteUserChapters = () => {
+    axios.delete(`http://localhost:3000/api/delete/`)
+        .then((res, err) => {
+            let itemsToDelete = res.data
+            for(let index = 0; index < itemsToDelete; index++) {
+                let element = document.getElementById(index)
+                if(element != null) {
+                    element.remove()
+                }
+            }
+        })
+}
+
 //this is the onclick listeners
+
+deleteButton.addEventListener("click", deleteUserChapters)
+
 chapOneBtn.addEventListener('click', getChapterOne)
 chapFinalBtn.addEventListener('click', getChapterFinal)
 chapSevenBtn.addEventListener('click', getChapterSeven)
