@@ -376,7 +376,7 @@ h1 {
 
 
 .circle {
-    background: white;
+    background: lightgray;
     border-radius: 50%;
     border: 5px solid gray;
     position: absolute;
@@ -403,26 +403,24 @@ h1 {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
+    display: none;
+    position: fixed; 
+    z-index: 9999; 
     left: -20%;
     top: -15%;
-    width: 150%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    /* background-color: rgb(0,0,0); Fallback color */
-    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    width: 150%; 
+    height: 100%; 
+    overflow: auto; 
     margin-left: -25%;
   }
   
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 30%; 
   }
   
   /* The Close Button */
@@ -444,40 +442,36 @@ h1 {
 
 /* RIGHT MODAL */
   .modalRight {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    /* background-color: rgb(0,0,0); Fallback color */
-    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
 }
 
 /* The Modal (background) */
 .modalRight {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow-y: auto; /* Enable scroll if needed */
-    /* background-color: rgb(0,0,0); Fallback color */
-    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow-y: auto; 
     margin-left: 25%;
   }
   
   /* Modal Content/Box */
   .modal-content-right {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 30%; 
     
   }
   

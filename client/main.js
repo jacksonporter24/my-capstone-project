@@ -123,6 +123,7 @@ const getChapterOne = () => {
     myModalRight.style.display = "block";
     myModalLeft.style.display = "block";
 }
+console
 
 const getChapterFinal = () => {
     if(onCreatePage) {
