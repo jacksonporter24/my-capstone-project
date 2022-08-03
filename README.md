@@ -17,5 +17,9 @@ Many stories, whether it be books or movies, follow something called the ring st
 ![example two](https://user-images.githubusercontent.com/107435549/182706182-c902585a-362d-4b72-b4e8-a6fd44fe0e36.png)
 
 <p>Toggle back to the "create" page and you will find that the buttons bring up nothing but instructions to enter text. If you type into the input text box on the left (which can be expanded), then select which "part" or "chapter" you wish to insert it into froj the dropdown menu above, you will be able to click submit. The button and it's corresponding button will then be brough to the screen. </p>
+
 ![example three](https://user-images.githubusercontent.com/107435549/182706897-676c1d6a-d8e6-4d17-934d-1eabd3379b40.png)
+
 ![example four](https://user-images.githubusercontent.com/107435549/182706904-76ab4ae0-2281-4db9-ba43-597456abed7a.png)
+
+<p>The "Delete All Chapters" button will clear every box.</p>
